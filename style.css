@@ -176,6 +176,18 @@ figcaption {
   text-decoration: none;
 }
 
+.footer__img-school {
+  height: 25px;
+}
+
+.footer__img-github {
+  height: 20px;
+}
+
+.footer__img-youtube {
+  height: 35px;
+}
+
 @media (max-width: 768px) {
   .footer {
     -webkit-box-orient: vertical;
