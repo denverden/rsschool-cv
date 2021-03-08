@@ -1,4 +1,4 @@
-.page {
+body {
   font-family: "PT Sans Narrow", sans-serif;
   background-color: #efefef;
   color: #757575;
@@ -7,12 +7,7 @@
   letter-spacing: 0.5px;
 }
 
-header {
-  margin: 0 auto;
-  max-width: 1024px;
-}
-
-.main {
+.page {
   margin: 0 auto;
   max-width: 1024px;
 }
@@ -148,8 +143,6 @@ figcaption {
 }
 
 .footer {
-  margin: 0 auto;
-  max-width: 1024px;
   background-color: #fff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
