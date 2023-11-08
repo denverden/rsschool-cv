@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>CV/Resume</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="#about" class="menu-link">about</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contact" class="menu-link">contact</a>
+            </li>
+            <li class="menu-item">
+              <a href="#skills" class="menu-link">skills</a>
+            </li>
+            <li class="menu-item">
+              <a href="#code" class="menu-link">code</a>
+            </li>
+            <li class="menu-item">
+              <a href="#experience" class="menu-link">experience</a>
+            </li>
+            <li class="menu-item">
+              <a href="#education" class="menu-link">education</a>
+            </li>
+            <li class="menu-item">
+              <a href="#english" class="menu-link">english</a>
+            </li>
+          </ul>
+          <div class="menu-burger"></div>
+        </nav>
+        <section class="about">
+          <div class="about__left">
+            <figure>
+              <img class="photo" src="assets/images/photo.png" alt="photo">
+              <figcaption>Frontend developer</figcaption>
+            </figure>
+            <a class="link download" href="assets/docs/CV_Resume.pdf" target="_blank">DOWNLOAD RESUME</a>
+          </div>
+          <div id="about" class="ancor"></div>
+          <div class="about__right">
+            <h1 class="about-header">
+              <span class="about-header__text">HI, I'M</span> DENIS NOVIKOV
+            </h1>
+            <p>
+              I love to study and I always open to new knowledge. I have work
+              experience with projects, which allows me to quickly and flexibly
+              respond to changes. I think that everything is not possible to
+              know. Therefore, I always try to evaluate my knowledge adequately.
+              It seems to me that the statement of Socrates "I know that I know
+              nothing." may be my credo.
+            </p>
+            <div id="contact"></div>
+            <ul class="contact">
+              <li>
+                Email:
+                <a class="link" href="mailto:denverden@mail.ru" target="_blank">denverden@mail.ru</a>
+              </li>
+              <li>
+                VK:
+                <a class="link" href="https://vk.com/id7111201" target="_blank">https://vk.com/id7111201</a>
+              </li>
+              <li>
+                Facebook:
+                <a class="link" href="https://www.facebook.com/denis.novikov.39108297" target="_blank">https://www.facebook.com/denis.novikov.39108297</a>
+              </li>
+              <li>
+                Instagram:
+                <a class="link" href="https://www.instagram.com/gnom068/" target="_blank">https://www.instagram.com/gnom068/</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </header>
+      <main class="main">
+        <section class="content">
+          <div id="skills" class="ancor"></div>
+          <h2 class="header">Skills</h2>
+          <div class="content__description">
+            <ul class="list">
+              <li>Git</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>Java</li>
+            </ul>
+            <ul class="list">
+              <li>OpenCart</li>
+              <li>Joomla</li>
+              <li>WordPress</li>
+              <li>Bitrix</li>
+            </ul>
+            <ul class="list">
+              <li>Visual Studio Code</li>
+              <li>Sublime</li>
+              <li>IntelliJIdea</li>
+              <li>Notepad++</li>
+              <li>PhotoShop</li>
+              <li>Open Server</li>
+            </ul>
+          </div>
+        </section>
+        <section class="content">
+          <div id="code" class="ancor"></div>
+          <h2 class="header">Code examples</h2>
+          <pre class="code">
+public List&lt;Diagnosis&gt; getRecords(Long start, Long total) throws DaoException {
+    String sql = "SELECT * FROM `diagnosis` WHERE `visible` = 1 LIMIT ?, ?";
+    PreparedStatement preparedStatement = null;
+    ResultSet resultSet = null;
+    try {
+        preparedStatement = getConnection().prepareStatement(sql);
+        preparedStatement.setLong(1, start);
+        preparedStatement.setLong(2, total);
+        resultSet = preparedStatement.executeQuery();
+        List&lt;Diagnosis&gt; diagnoses = new ArrayList&lt;&gt;();
+        while (resultSet.next()) {
+            Diagnosis diagnosis = new Diagnosis();
+            diagnosis.setId(resultSet.getLong("diagnosis_id"));
+            diagnosis.setCode(resultSet.getString("code"));
+            diagnosis.setName(resultSet.getString("name"));
+            diagnoses.add(diagnosis);
+        }
+        return diagnoses;
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (Exception e) {
+        }
+        try {
+            resultSet.close();
+        } catch (Exception e) {
+        }
+    }
+}
+            </pre
+          >
+        </section>
+        <section class="content">
+          <div id="experience" class="ancor"></div>
+          <h2 class="header">Experience</h2>
+          <h3 class="under-header">My projects</h3>
+          <div class="experience">
+            <figure class="experience-block">
+              <a class="link experience-link" href="https://denverden-english-for-kids.netlify.app/" target="_blank">
+                <img src="assets/images/project-1.jpg" alt="English for kids">
+              </a>
+              <figcaption>
+                <b>English for kids</b><br>App for memorizing english words<br>(HTML + CSS + JS)
+              </figcaption>
+            </figure>
+            <figure class="experience-block">
+              <a class="link experience-link" href="https://denverden-movie-search.netlify.app/" target="_blank">
+                <img src="assets/images/project-2.jpg" alt="Movie search">
+              </a>
+              <figcaption>
+                <b>Movie search</b><br>Movie poster finder app<br>(HTML + CSS + JS)
+              </figcaption>
+            </figure>
+            <figure class="experience-block">
+              <a class="link experience-link" href="https://denverden-gem-puzzle.netlify.app/" target="_blank">
+                <img src="assets/images/project-3.jpg" alt="Gem puzzle">
+              </a>
+              <figcaption>
+                <b>Gem puzzle</b><br>Game gem pazzle <br>(HTML + CSS + JS)
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="content">
+          <div id="education" class="ancor"></div>
+          <h2 class="header">Education</h2>
+          <h3 class="under-header">Finished studies:</h3>
+          <ul class="list">
+            <li>VITEBSK STATE POLYTECHNICAL COLLEGE</li>
+            <li>Certificate SEO-specialist school digital-marketer ARTOX</li>
+            <li>
+              Certificate LightEnglish, Certification exam for level A2
+              complated on 27 August 2019
+            </li>
+            <li>Trening "EPAM Systems" Java Web-Applications Development</li>
+            <li>
+              <a class="link" href="https://app.rs.school/certificate/m92fqnpf" target="_blank">RSScholl 2020 Q1</a>
+            </li>
+            <li>
+              <a class="link" href="https://app.rs.school/certificate/3ejwgwnp" target="_blank">RSScholl 2021 Q3</a>
+            </li>
+          </ul>
+          <h3 class="under-header">Sources of study:</h3>
+          <ul class="list">
+            <li>rs.school.com</li>
+            <li>htmlacademy.ru</li>
+            <li>learn.javascript.ru</li>
+            <li>w3schools.com</li>
+            <li>youtube.com</li>
+            <li>Different books</li>
+          </ul>
+        </section>
+        <section class="content">
+          <div id="english" class="ancor"></div>
+          <h2 class="header">English</h2>
+          <p>
+            Different tests give me a rating A2 or B1. I think realy my English
+            is between A1 and A2. I continue to study.
+          </p>
+        </section>
+      </main>
+      <footer class="footer">
+        <a class="link footer__copyright" href="https://rs.school/js/" target="_blank"><img class="footer__img-school" src="assets/icons/rs_school_js.svg" alt="rs-school">&nbsp;&nbsp;&copy; 2023</a>
+        <a class="link footer__github" href="https://github.com/denverden" target="_blank"><img class="footer__img-github" src="assets/icons/github.svg" alt="github">&nbsp;DenverDen</a>
+      </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
