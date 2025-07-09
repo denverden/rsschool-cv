@@ -40,11 +40,11 @@
       <section class="about">
         <div class="about__left">
           <figure>
-            <img class="photo" src="assets/images/photo.png" alt="photo" />
+            <img class="photo" src="assets/images/photo.png" alt="photo">
             <figcaption>Frontend developer</figcaption>
           </figure>
         </div>
-        <a id="about" class="ancor"></a>
+        <div id="about" class="ancor"></div>
         <div class="about__right">
           <h1 class="about-header">
             <span class="about-header__text">HI, I'M</span> DENIS NOVIKOV
@@ -57,7 +57,7 @@
             It seems to me that the statement of Socrates "I know that I know
             nothing." may be my credo.
           </p>
-          <a id="contact"></a>
+          <div id="contact"></div>
           <ul class="contact">
             <li>
               Email:
@@ -83,7 +83,7 @@
     </header>
     <main class="main">
       <section class="content">
-        <a id="skills" class="ancor"></a>
+        <div id="skills" class="ancor"></div>
         <h2 class="header">Skills</h2>
         <div class="content__description">
           <ul class="list">
@@ -114,7 +114,7 @@
         </div>
       </section>
       <section class="content">
-        <a id="code" class="ancor"></a>
+        <div id="code" class="ancor"></div>
         <h2 class="header">Code examples</h2>
         <pre class="code">
           public List&lt;Diagnosis&gt; getRecords(Long start, Long total) throws DaoException {
@@ -126,7 +126,7 @@
           preparedStatement.setLong(1, start);
           preparedStatement.setLong(2, total);
           resultSet = preparedStatement.executeQuery();
-          List&lt;Diagnosis&gt; diagnoses = new ArrayList&gt;&пt;();
+          List&lt;Diagnosis&gt; diagnoses = new ArrayList&lt;&gt;();
           while (resultSet.next()) {
           Diagnosis diagnosis = new Diagnosis();
           diagnosis.setId(resultSet.getLong("diagnosis_id"));
@@ -151,7 +151,7 @@
         </pre>
       </section>
       <section class="content">
-        <a id="experience" class="ancor"></a>
+        <div id="experience" class="ancor"></div>
         <h2 class="header">Experience</h2>
         <h3 class="under-header">My projects</h3>
         <div class="experience">
@@ -176,7 +176,7 @@
         </div>
       </section>
       <section class="content">
-        <a id="education" class="ancor"></a>
+        <div id="education" class="ancor"></div>
         <h2 class="header">Education</h2>
         <h3 class="under-header">Finished studies:</h3>
         <ul class="list">
@@ -200,7 +200,7 @@
         </ul>
       </section>
       <section class="content">
-        <a id="english" class="ancor"></a>
+        <div id="english" class="ancor"></div>
         <h2 class="header">English</h2>
         <p>
           Different tests give me a rating A2 or B1. I think realy my English
@@ -210,10 +210,10 @@
     </main>
     <footer class="footer">
       <a class="link footer__copyright" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
-        <img class="footer__img-school" src="assets/icons/rs_school_js.svg" alt="rs-school" />&nbsp;&nbsp;&copy; 2025Q2
+        <img class="footer__img-school" src="assets/icons/rs_school_js.svg" alt="rs-school">&nbsp;&nbsp;&copy; 2025Q2
       </a>
       <a class="link footer__github" href="https://github.com/denverden" target="_blank">
-        <img class="footer__img-github" src="assets/icons/github.svg" alt="github" />&nbsp;DenverDen
+        <img class="footer__img-github" src="assets/icons/github.svg" alt="github">&nbsp;DenverDen
       </a>
     </footer>
   </div>
