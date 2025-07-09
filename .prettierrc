@@ -1,0 +1,9 @@
+{
+  "htmlWhitespaceSensitivity": "ignore",
+  "htmlVoidElements": ["img", "input", "br", "meta", "link", "hr", "area", "base", "col", "embed", "param", "source", "track", "wbr"],
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 120
+}
