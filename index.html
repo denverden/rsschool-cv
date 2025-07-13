@@ -36,13 +36,15 @@
             <a href="#english" class="menu-link">english</a>
           </li>
         </ul>
+        <button class="menu-burger"></button>
       </nav>
       <section class="about">
         <div class="about__left">
           <figure>
-            <img class="photo" src="assets/images/photo.png" alt="photo" />
+            <img class="photo" src="assets/images/photo.png" alt="photo">
             <figcaption>Frontend developer</figcaption>
           </figure>
+          <a class="link download" href="assets/docs/CV_Resume.pdf" target="_blank">DOWNLOAD RESUME</a>
         </div>
         <a id="about" class="ancor"></a>
         <div class="about__right">
@@ -126,7 +128,7 @@
           preparedStatement.setLong(1, start);
           preparedStatement.setLong(2, total);
           resultSet = preparedStatement.executeQuery();
-          List&lt;Diagnosis&gt; diagnoses = new ArrayList&gt;&пt;();
+          List&lt;Diagnosis&gt; diagnoses = new ArrayList&lt;&gt;();
           while (resultSet.next()) {
           Diagnosis diagnosis = new Diagnosis();
           diagnosis.setId(resultSet.getLong("diagnosis_id"));
@@ -209,14 +211,15 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="link footer__copyright" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
-        <img class="footer__img-school" src="assets/icons/rs_school_js.svg" alt="rs-school" />&nbsp;&nbsp;&copy; 2025Q2
+      <a class="link footer__copyright" href="https://rs.school/js/" target="_blank">
+        <img class="footer__img-school" src="assets/icons/rs_school_js.svg" alt="rs-school">&nbsp;&nbsp;&copy; 2025Q2
       </a>
       <a class="link footer__github" href="https://github.com/denverden" target="_blank">
-        <img class="footer__img-github" src="assets/icons/github.svg" alt="github" />&nbsp;DenverDen
+        <img class="footer__img-github" src="assets/icons/github.svg" alt="github">&nbsp;DenverDen
       </a>
     </footer>
   </div>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
