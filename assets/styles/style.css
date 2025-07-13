@@ -1,9 +1,9 @@
 html {
-  scroll-behavior: smooth;
+ scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   background-color: #efefef;
   color: #757575;
   font-size: 18px;
@@ -27,7 +27,39 @@ body {
   background-color: #fff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);  
+}
+
+.menu-burger {
+  width: 25px;
+  height: 3px;
+  background-color: #757575;
+  border: none;
+  position: relative;
+  margin: 20px;
+  display: none;
+}
+
+.menu-burger:after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  width: 25px;
+  height: 3px;
+  background-color: #757575;
+  border: none;
+}
+
+.menu-burger:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 25px;
+  height: 3px;
+  background-color: #757575;
+  border: none;
 }
 
 .menu-list {
@@ -175,6 +207,24 @@ body {
   color: #0487cc;
 }
 
+.download {
+  display: block;
+  margin: 25px auto;
+  padding: 15px 5px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #757575;
+  transition: all 0.3s;
+}
+
+.download:hover {
+  color: #333;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
 .code {
   overflow: auto;
 }
@@ -203,7 +253,8 @@ figcaption {
 }
 
 .footer__copyright,
-.footer__github {
+.footer__github,
+.footer__youtube {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,6 +272,10 @@ figcaption {
   height: 20px;
 }
 
+.footer__img-youtube {
+  height: 35px;
+}
+
 @media (max-width: 768px) {
   .footer {
     -webkit-box-orient: vertical;
@@ -233,7 +288,8 @@ figcaption {
   }
 
   .footer__copyright,
-  .footer__github {
+  .footer__github,
+  .footer__youtube {
     margin: 5px 0px;
   }
 
@@ -241,6 +297,10 @@ figcaption {
     justify-content: flex-end;
     -webkit-box-pack: flex-end;
     -ms-flex-pack: flex-end;
+  }
+
+  .menu-burger {
+    display: flex;
   }
 
   .menu-list {
@@ -256,7 +316,7 @@ figcaption {
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   }
 
-  .menu-list.action {
+  .menu-list.action{
     display: flex;
   }
 
